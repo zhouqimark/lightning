@@ -8,6 +8,20 @@
   </div>
 </template>
 
+<script>
+// @ is an alias to /src
+import ZeitUI from '@zeit-ui/vue'
+export default {
+  name: "App",
+  components: {
+    
+  },
+  created() {
+      ZeitUI.theme.enableLight()
+  }
+};
+</script>
+
 <style lang="stylus">
 #app
   font-family Avenir, Helvetica, Arial, sans-serif
@@ -15,5 +29,5 @@
   -moz-osx-font-smoothing grayscale
   text-align center
   color #2c3e50
-  margin-top 60px
+  margin-top 30px
 </style>
